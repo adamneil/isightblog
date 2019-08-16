@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import 'bootstrap-material-design';
+
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import news from './components/news';
 import login from './components/login';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-material-design/dist/css/bootstrap-material-design.css';
 import dashboard from './components/dashboard';
 import addnews from './components/addnews';
 import singlenews from './components/singlenews';
@@ -26,7 +28,7 @@ ReactDOM.render(
           <div className="container">     
           
          <div>
-         <div className="jumbotron center">React PWA in Cosmic JS</div>
+         <div className="jumbotron center">React P in Cosmic JS</div>
          
          </div>
          

@@ -1,10 +1,10 @@
 const config = {
     
-bucket_name: "react-pwa",
-bucket_slug: "react-pwa",
-bucket_id: "5c3f6c46081d3062a56ea573",
-read_key: "d12casi186oW1ZTQcJb2GaCXAeVukJgUPTPT13tAzfpssSWFWU",
-write_key: "eDwoad693AAsC6ppiIE2IWKAlG0n8xPYFpP1QrSCrp0MZ6Lis7",
+bucket_name: "boomtown-blog",
+bucket_slug: "4adddd70-c033-11e9-81c2-b34e030e5698",
+bucket_id: "5d56bf861b388168e89902a0",
+read_key: "b0cBbzgbX3KntbOVOkdBR6NaoDKoBu2VxRXgE7ldK7jaoxrBfP",
+write_key: "rbvIzx5oK2ZNKthBlJ2KSluPO8BLCjiN6CC0CUyqQotDLtfoUX",
 url: "https://api.cosmicjs.com/v1/"
 
 }
