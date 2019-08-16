@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
-import './../CSS/addnews.css';
 import newsData from './../services/news';
 import { Link } from 'react-router-dom';
+import '../CSS/addnews.css';
 
 class addnews extends Component {
     constructor(props) {
