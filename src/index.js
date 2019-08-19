@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import news from './components/news';
 import login from './components/login';
-import 'bootstrap-material-design/dist/css/bootstrap-material-design.min.css';
-// import 'material-kit/css/material-kit.min.css';
+import 'bootstrap';
+import './material-kit/assets/css/material-kit.css';
 import 'react-quill/dist/quill.snow.css'; // ES6
 import dashboard from './components/dashboard';
 import addnews from './components/addnews';
@@ -25,22 +23,15 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Learn more about service workers: http://bit.ly/CRA-PWA
 
 ReactDOM.render(
+  
   <Router>
     <React.Fragment>
-
-
-
-
       <NavBar />
       <Route exact path='/' component={news} />
-      <Route path='/dashboard' component={dashboard} />
-      <Route path='/login' component={login} />
-      <Route path='/addnews' component={addnews} />
-      <Route path='/singlenews/:id' component={singlenews} />
-      <div>
-        <p className="footer-center">Proudly Powered by <a href="https://cosmicjs.com/">Cosmic JS</a></p>
-      </div>
-
+      <Route exact path='/dashboard' component={dashboard} />
+      <Route exact path='/login' component={login} />
+      <Route exact path='/addnews' component={addnews} />
+      <Route exact path='/singlenews/:id' component={singlenews} />
     </React.Fragment>
   </Router >,
   document.getElementById('root')

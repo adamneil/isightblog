@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      "material-kit",
+      "/home/jake/cosmicjs-pwa"
+    ]
+  ],
+  "_from": "material-kit@latest",
+  "_hasShrinkwrap": false,
+  "_id": "material-kit@2.0.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/material-kit",
+  "_nodeVersion": "9.8.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/material-kit_2.0.4_1530545171672_0.652414397361964"
+  },
+  "_npmUser": {
+    "email": "hello@creative-tim.com",
+    "name": "creative-tim"
+  },
+  "_npmVersion": "6.1.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "material-kit",
+    "raw": "material-kit",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/material-kit/-/material-kit-2.0.4.tgz",
+  "_shasum": "929a284bfca39973e1e6711dc9f0ad8ed5055d74",
+  "_shrinkwrap": null,
+  "_spec": "material-kit",
+  "_where": "/home/jake/cosmicjs-pwa",
+  "author": {
+    "email": "hello@creative-tim.com",
+    "name": "Creative Tim",
+    "url": "https://www.creative-tim.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/material-kit/issues"
+  },
+  "dependencies": {},
+  "description": "Material Kit, a Google Material Desgin. Coded by Creative Tim",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-open": "^3.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "directories": {
+    "example": "root"
+  },
+  "dist": {
+    "fileCount": 225,
+    "integrity": "sha512-YtcRcqV0s7iByigCfcoHqtrUgXaicyYyZYikn6cdUuKdPdYvQplOUvUgvzmNTvDPcZXzLt8MUk9YfpWWOGISOQ==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbOkQUCRA9TVsSAnZWagAA97gP/3BEuXK9XWUGiApxTjOZ\nxjY2zWcLl+DzpPCDENgj2dSYXYTR7c7rhUZKTZYMJyOocL64ke/s1eMUSVQl\nzgRNoFogOEqCJhV/E6PHJycUUAOtMkNXbbstSAndIUksD8GcoeNLf9wpb2Oi\nNyxpgECLlTt+Kx9SRru9oUZpkNHEqTLGEgo7+EgXahZDAHAL04GyFk+vSIwG\nx7CDLQpX9eGCkNG7sF8vzPoerdnaAF5nIUNNDHWO3vdzvE44kFgE1IMsCUxO\nU8cWfrrZY/Id2IEi6QopT0vXRLwiEPX5YNsQm/AcOCYH4iQv3DU6EW9hOHQ/\n3XotSa6ks2mML2zOMSuwWz+9BY/95+ay2Nu/fLLR7MJtLbqJlVlwHfDqKDeo\ndeE1ghNRbXWVjCcE9JtHKJ1D8Z/2CBIONIkjalndb81uz4mj+eeRlXsrw0BA\n/pcjcCfIjHcg7Qp/SIixUasGcC1vGZnQ8CnUvHsXZNVjTadXkg4GkLvn8P2n\nQuRgXZ27RuY5738LEuFBMLIuj32mtDJ01Dz4gajT0XcQZouUASCdYziERM1G\nj6sK+S+gAfsxXqrG3CRu3PjLr5ZeFmy3asvpEEL1IQa4VhMcIRAqbnYcxD5y\n+quD5Y5Ov0ygmnSYNATWcAWK6FHdnp6Y5TkR7D0bKUAqiribhwZC+ND25rf2\n0Q0n\r\n=/uWM\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "929a284bfca39973e1e6711dc9f0ad8ed5055d74",
+    "tarball": "https://registry.npmjs.org/material-kit/-/material-kit-2.0.4.tgz",
+    "unpackedSize": 8166572
+  },
+  "gitHead": "005d5cd2d3ed014e294e68755d4fb96883d46ac6",
+  "homepage": "https://demos.creative-tim.com/material-kit/index.html",
+  "keywords": [
+    "bootstrap admin",
+    "bootstrap kit",
+    "bootstrap material admin",
+    "bootstrap material kit",
+    "creative tim",
+    "css3 kit",
+    "free bootstrap kit",
+    "freebie",
+    "frontend",
+    "html css kit",
+    "html kit",
+    "material design",
+    "material design admin",
+    "material kit",
+    "responsive bootstrap kit",
+    "web kit"
+  ],
+  "license": "MIT",
+  "main": "index.html",
+  "maintainers": [
+    {
+      "name": "axelut",
+      "email": "alex@creative-tim.com"
+    },
+    {
+      "name": "blogtools",
+      "email": "contact@blogtools.ro"
+    },
+    {
+      "name": "einazare",
+      "email": "emanuelioannazare@gmail.com"
+    }
+  ],
+  "name": "material-kit",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/material-kit.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.4"
+}

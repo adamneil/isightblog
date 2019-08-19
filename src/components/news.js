@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import newsData from './../services/news';
-import ReactHtmlParser from 'react-html-parser';
 import { Link } from 'react-router-dom';
+import Header from './header';
+import styled from 'styled-components';
+import ReactHTMLParser from 'react-html-parser';
+
 
 class news extends Component {
   data;
@@ -41,24 +44,45 @@ class news extends Component {
   }
 
   render() {
+    
     return (
-      <div class="row">
-          <React.Fragment>
-        {this.state.newsArray.map(newsData =>
-            <div className="card col-md-4"> 
-                <div className="text-black text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-                  <div>
-                    <h3 className='card-title' key="{newsData.title}"><strong>{newsData.title}</strong></h3>
-                    <p key={newsData.metadata.description}>{ReactHtmlParser(newsData.metadata.description)}</p>
-                    <Link to={`/singlenews/${newsData._id}`} className="btn btn-success" key={newsData._id}>Complete News..</Link>
-                  </div>
-                </div>
+      <React.Fragment>
+        <Header />
+        <div class="blogs-2">
+          <div class="container">
+            <div class="section">
+
+              <div class="row">
+                <React.Fragment>
+                  {this.state.newsArray.map(newsData =>
+                    <div class="col-md-4">
+                      <Link to={`/singlenews/${newsData._id}`} class="card-description" key={newsData._id}>
+                        <Card className="card card-plain card-blog">
+                          <div class="card-header card-header-image">
+                            <img class="img img-raised" src={newsData.metadata.backgroundimage.url} />
+                          </div>
+                          <div class="card-body">
+                            <h6 class="card-category text-info">{newsData.metadata.category}</h6>
+                            <h3 class='card-title' key="{newsData.title}">{newsData.title}</h3>
+                            <p class="card-description">
+                             {ReactHTMLParser(newsData.content.slice(0, 200).concat("..."))}<a href="#">Read More</a>                          
+                            </p>
+                            
+                          </div>
+                        </Card>
+                      </Link>
+                    </div>
+                  )}
+                </React.Fragment>
+              </div>
             </div>
-        )}
-        </React.Fragment>
+          </div>
         </div>
+
+      </React.Fragment >
     );
   }
+
 
   componentDidMount() {
     this.data = localStorage.getItem('currentUser');
@@ -68,4 +92,8 @@ class news extends Component {
 
 }
 
+
+
+const Card = styled.div`
+`
 export default news;

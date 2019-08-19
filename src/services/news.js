@@ -35,31 +35,6 @@ const newsData = {
         })
     },
 
-    // submiting comment
-    submitComment(name, comment, newsId)
-    {
-        return axios.post(config.url+config.bucket_slug+"/add-object/", {
-            title: name, slug: name, content: newsId, type_slug: 'comments', write_key: config.write_key,
-            metafields: [
-                {
-                  key: "comment",
-                  type: "text",
-                  value: comment
-                }
-            ]
-                    
-        })
-    },
-
-    // all comments
-    allComments()
-    {
-        return axios.get(config.url+config.bucket_slug+"/object-type/comments",{
-            params: {
-                read_key: config.read_key
-            }
-        })
-    }
 
 }
 
