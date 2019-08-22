@@ -20,17 +20,17 @@ class dashboard extends Component {
     return (
       <div>
         <div>
-          <ul id="ul_top_hypers">
+          <ul class="nav nav-tabs justify-content-end">
 
-            <li> <Link to="/"><button type="submit" className="btn btn-success" >
+            <li class="nav-item"> <Link to="/"><button type="submit" className="btn btn-success" >
               Home
           </button></Link>
             </li>
-            <li> <Link to="/addnews"><button type="submit" className="btn btn-success" >
+            <li class="nav-item"> <Link to="/addnews"><button type="submit" className="btn btn-success" >
               Add News
           </button></Link>
             </li>
-            <li>  <button type="submit" className="btn btn-success" onClick={this.logout}>
+            <li class="nav-item"><button type="submit" className="btn btn-success" onClick={this.logout}>
               Logout
         </button></li>
           </ul>
