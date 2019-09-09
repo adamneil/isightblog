@@ -33,9 +33,6 @@ class addnews extends Component {
     this.setState({ description: value })
   }
 
-  handChange3(value) {
-    this.setState({ media: value})
-  }
 
   todayDate() {
     var today = new Date(),
@@ -94,9 +91,9 @@ class addnews extends Component {
                 <ReactQuill name="newsbody" value={this.state.newsbody} className="ql-container"
                   onChange={this.handleChange} placeholder="Enter body..." />
               </div>
-              <div>
-                <input type="file" alt="background image" name="media" />
-              </div>
+              {/* <div>
+                <input type="file"  className="form-control" alt="background image" name="media" />
+              </div> */}
               <div className="form-group margin-up">
                 <button type="submit" className="btn btn-success margin-up">Publish</button>
               </div>

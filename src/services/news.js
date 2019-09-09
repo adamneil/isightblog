@@ -4,7 +4,7 @@ import axios from 'axios';
 const newsData = {
 
     // add news to Cosmic JS database
-    addnews(title, description, newsbody, date, backgroundimage)
+    addnews(title, description, newsbody, date)
     {
         return axios.post(config.url+config.bucket_slug+"/add-object/", {
             title: title, slug: title, content: newsbody, type_slug: 'news', write_key: config.write_key,
@@ -20,15 +20,12 @@ const newsData = {
                     type: "text",
                     value: date
                   },
-                  {
-                    key: "backgroundimage",
-                    type: "media",
-                    value: backgroundimage
-                  }
             ]
         
         })
     },
+
+
 
     // fetch all news from Cosmic JS database
     getNews()
